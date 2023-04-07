@@ -35,6 +35,9 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector2 movement)
     {
-        rig.velocity = movement;
+         transform.Translate(movement * Time.deltaTime);
+
     }
+
+    
 }
