@@ -15,5 +15,10 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Created By Robbi Adam");
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 
 }
