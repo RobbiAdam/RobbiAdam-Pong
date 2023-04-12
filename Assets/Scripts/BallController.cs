@@ -5,12 +5,12 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public int speed = 5;
-    private Rigidbody2D rig;
+    private Rigidbody2D rb;
     private Vector3 startPosition;
 
     private void Start() {
         
-        rig = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
         LaunchRandom();
     }
@@ -36,7 +36,7 @@ public class BallController : MonoBehaviour
     int y = Random.Range(0,2) == 0 ? -1 : 1;
 
     Vector2 direction = new Vector2(x, y);
-    rig.velocity = direction * speed;
+    rb.velocity = direction * speed;
     }
 
 }
