@@ -3,7 +3,7 @@ Logs/*
 Temp/*
 .vs/*
 obj/*
-
+.vscode/*
 .vsconfig
 *.sln
 *.csproj
