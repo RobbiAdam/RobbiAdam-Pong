@@ -24,6 +24,7 @@ public class BallController : MonoBehaviour
         
         if(other.CompareTag("Goal"))
         {
+            speed = 5;
             transform.position = startPosition;
             LaunchRandom();
         }
@@ -37,6 +38,11 @@ public class BallController : MonoBehaviour
 
     Vector2 direction = new Vector2(x, y);
     rb.velocity = direction * speed;
+    }
+
+    public void ActiveSpeedUp(float magnitude)
+    {
+        rb.velocity *= 2;
     }
 
 }
